@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANJEEVANI</title>
+  <link rel="icon" href="./images/Logo_Favi.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="./images/Logo_Favi.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #80F7D1;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
+
+  .back-top-wrap:hover {
+    background-color: #00a2ff;
+    color: #80F7D1;
+  }
+
+  .back-top-wrap:hover .fas.fa-arrow-up {
+    color: white;
+  }
+
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
+  .nav{
+    color: rgb(224, 8, 138);
+  }
+  .footercontent{
+    color: rgb(224, 8, 138);
+  }
+  
+</style>
+
+<body onload="myFunction()">
+  <div class="loading-wrapper">
+    <img src="./images/image1234.png" id="loading" />
+  </div>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <header>
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> 
+        <img src ="./images/image1234.png" alt="Logo" class="logo" /></a>
+        <h2><I>SANJEEVANI</I></h2>
+        <h6><center>Chakra Healing</center></h6>
+      </div>
+      <div class="nav-links" id="navLinks">.
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="html/contact.html">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="html/contact.html">CONTACT US </a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to <i>SANJEEVANI</i></h1>
+      <div class="container">
+        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["The one-step solution to get relief from your stress. Live a stress-free life!"],
+          typeSpeed: 50,
+          backspeed: 50,
+          loop: true
+        })
+      </script>
+      <a href="#services" class="rainbow-button" alt="Explore"></a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1 data-aos="flip-right">About Us</h1>
+    <div class="max-width">
+      <div data-aos="zoom-in" class="photo"><img src="./images/about.jpg" alt="" height="300px" width="330px"></div>
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1"> We are a team of open source contributors who have created this website
+          SANJEEVANI with the aim to provide a <span>one step solution</span> to get relief from stress. </p>
+        <p data-aos="fade-left" class="text-3">We hope that everyone can live a <span>stress free life </span>with the
+          help of<span> SANJEEVANI.</span></p>
+      </div>
+    </div>
+    <h3><span style="color: rgb(14, 168, 245);">MEET OUR MEMBERS</span></h3>
+
+    <div class="box">
+
+      
+<!-- TEAM MEMBERS CONNECTION DETAILS -->
+
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/shiwansh.jpg" alt="" loading="lazy">
+        <h5>SHIVANSH MISHRA</h5>
+        <div class="pra">
+          <p>Head of The Team</p>
+          
+          <!-- Connect Button -->
+<button id="connectBtn1" style="padding:15px 25px; font-size:18px; background:#0077b5; color:white; border:none; border-radius:8px; cursor:pointer;">
+  Let's Connect
+</button>
+
+<!-- Popup -->
+<div class="popup" id="popup1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,50,0.3); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); justify-content:center; align-items:center; flex-direction:column; text-align:center;">
+  <div class="popup-content" style="display:flex; flex-direction:column; gap:15px;">
+    <a href="https://wa.me/9555843635" target="_blank" id="whatsappLink1" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#25D366;">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/shivansh-mishra-09838a290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" id="linkedinLink1" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#0A66C2;">LinkedIn</a>
+    <a href="https://github.com/shiwanshm66" target="_blank" id="githubLink1" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#333;">GitHub</a>
+    <button onclick="closePopup1()" style="margin-top:10px; padding:8px 16px; background:red; color:white; border:none; border-radius:6px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const connectBtn1 = document.getElementById("connectBtn1");
+  const popup1 = document.getElementById("popup1");
+
+  connectBtn1.addEventListener("click", () => {
+    popup1.style.display = "flex";
+  });
+
+  function closePopup1() {
+    popup1.style.display = "none";
+  }
+
+  // Optional: close popup if click outside buttons
+  popup1.addEventListener("click", (e) => {
+    if(e.target === popup1) closePopup1();
+  });
+</script>
+
+
+        </div>
+      </div>
+
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="./images/AMAN_H2S.jpg" alt="Piyush Kumar" loading="lazy">
+        <h5>AMAN TIWARI</h5>
+        <div class="pra">
+          <p>Member</p>
+
+          
+          <!-- Connect Button -->
+<button id="connectBtn" style="padding:15px 25px; font-size:18px; background:#0077b5; color:white; border:none; border-radius:8px; cursor:pointer;">
+  Let's Connect
+</button>
+
+<!-- Popup -->
+<div class="popup" id="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,50,0.3); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); justify-content:center; align-items:center; flex-direction:column; text-align:center;">
+  <div class="popup-content" style="display:flex; flex-direction:column; gap:15px;">
+    <a href="https://wa.me/6354819117" target="_blank" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#25D366;">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/aman-tiwari-259432318" target="_blank" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#0A66C2;">LinkedIn</a>
+    <a href="https://github.com/mycodes1605" target="_blank" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#333;">GitHub</a>
+    <button onclick="closePopup()" style="margin-top:10px; padding:8px 16px; background:red; color:white; border:none; border-radius:6px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const connectBtn = document.getElementById("connectBtn");
+  const popup = document.getElementById("popup");
+
+  connectBtn.addEventListener("click", () => {
+    popup.style.display = "flex";
+  });
+
+  function closePopup() {
+    popup.style.display = "none";
+  }
+
+  // Optional: close popup if click outside buttons
+  popup.addEventListener("click", (e) => {
+    if(e.target === popup) closePopup();
+  });
+</script>
+
+
+
+          
+        </div>
+      </div>
+      
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="./images/SWAPNIL_H2S2.jpg" alt="Piyush Kumar" loading="lazy">
+        <h5>SWAPNIL KUMAR PANDEY</h5>
+        <div class="pra">
+          <p>Member</p>
+          
+          <!-- Connect Button -->
+<button id="connectBtn2" style="padding:15px 25px; font-size:18px; background:#0077b5; color:white; border:none; border-radius:8px; cursor:pointer;">
+  Let's Connect
+</button>
+
+<!-- Popup -->
+<div class="popup" id="popup2" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,50,0.3); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); justify-content:center; align-items:center; flex-direction:column; text-align:center;">
+  <div class="popup-content" style="display:flex; flex-direction:column; gap:15px;">
+    <a href="https://wa.me/8076548249" target="_blank" id="whatsappLink1" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#25D366;">WhatsApp</a>
+    <a href="https://in.linkedin.com/in/swapnil-pandey-982b2b295" target="_blank" id="linkedinLink2" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#0A66C2;">LinkedIn</a>
+    <a href="https://github.com/swapnilpandey026" target="_blank" id="githubLink2" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#333;">GitHub</a>
+    <button onclick="closePopup2()" style="margin-top:10px; padding:8px 16px; background:red; color:white; border:none; border-radius:6px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const connectBtn2 = document.getElementById("connectBtn2");
+  const popup2 = document.getElementById("popup2");
+
+  connectBtn2.addEventListener("click", () => {
+    popup2.style.display = "flex";
+  });
+
+  function closePopup2() {
+    popup2.style.display = "none";
+  }
+
+  // Optional: close popup if click outside buttons
+  popup2.addEventListener("click", (e) => {
+    if(e.target === popup2) closePopup2();
+  });
+</script>
+
+
+        </div>
+      </div>
+      
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/SHASHANK_H2S.jpg" alt="chaitri" loading="lazy">
+        <h5>SHASHANK</h5>
+        <div class="pra">
+          <p >Member</p>
+
+
+          <!-- Connect Button -->
+<button id="connectBtn3" style="padding:15px 25px; font-size:18px; background:#0077b5; color:white; border:none; border-radius:8px; cursor:pointer;">
+  Let's Connect
+</button>
+
+<!-- Popup -->
+<div class="popup" id="popup3" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,50,0.3); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); justify-content:center; align-items:center; flex-direction:column; text-align:center;">
+  <div class="popup-content" style="display:flex; flex-direction:column; gap:15px;">
+    <a href="https://wa.me/8090268753" target="_blank" id="whatsappLink3" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#25D366;">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/shashank-776800327" target="_blank" id="linkedinLink3" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#0A66C2;">LinkedIn</a>
+    <a href="https://github.com/Shashank809026" target="_blank" id="githubLink3" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#333;">GitHub</a>
+    <button onclick="closePopup3()" style="margin-top:10px; padding:8px 16px; background:red; color:white; border:none; border-radius:6px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const connectBtn3 = document.getElementById("connectBtn3");
+  const popup3 = document.getElementById("popup3");
+
+  connectBtn3.addEventListener("click", () => {
+    popup3.style.display = "flex";
+  });
+
+  function closePopup3() {
+    popup3.style.display = "none";
+  }
+
+  // Optional: close popup if click outside buttons
+  popup3.addEventListener("click", (e) => {
+    if(e.target === popup3) closePopup3();
+  });
+</script>
+
+
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="./images/PRATISHTHA_S2H.jpg" alt="chaitri" loading="lazy">
+        <h5>PRATISHTHA KESARI</h5>
+        <div class="pra">
+          <p >Member</p>
+          
+          <!-- Connect Button -->
+<button id="connectBtn4" style="padding:15px 25px; font-size:18px; background:#0077b5; color:white; border:none; border-radius:8px; cursor:pointer;">
+  Let's Connect
+</button>
+
+<!-- Popup -->
+<div class="popup" id="popup4" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,50,0.3); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); justify-content:center; align-items:center; flex-direction:column; text-align:center;">
+  <div class="popup-content" style="display:flex; flex-direction:column; gap:15px;">
+    <a href="https://wa.me/8840446414" target="_blank" id="whatsappLink4" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#25D366;">WhatsApp</a>
+    <a href="https://in.linkedin.com/in/pratishtha-kesari-21a003253" target="_blank" id="linkedinLink4" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#0A66C2;">LinkedIn</a>
+    <a href="https://github.com/Pratishtha-Kesari" target="_blank" id="githubLink4" style="padding:12px 20px; border-radius:6px; text-decoration:none; color:white; background:#333;">GitHub</a>
+    <button onclick="closePopup4()" style="margin-top:10px; padding:8px 16px; background:red; color:white; border:none; border-radius:6px; cursor:pointer;">Close</button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const connectBtn4 = document.getElementById("connectBtn4");
+  const popup4 = document.getElementById("popup4");
+
+  connectBtn4.addEventListener("click", () => {
+    popup4.style.display = "flex";
+  });
+
+  function closePopup4() {
+    popup4.style.display = "none";
+  }
+
+  // Optional: close popup if click outside buttons
+  popup4.addEventListener("click", (e) => {
+    if(e.target === popup4) closePopup4();
+  });
+</script>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+      <div class="responsive audio">
+        <div class="round-image">
+          <img src="./images/audio.png" alt="audio" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Audio Therapy</h2>
+          <p>
+            Listening to music & other audio files often enlightens our mood.
+          </p>
+          <a href="html/audioTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="./images/reading.png" alt="read" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Reading Therapy</h2>
+          <p>
+            Motivational quotes and books can help us to divert and change our mood.
+          </p>
+          <a href="html/readingTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
+        <div class="round-image">
+          <img src="./images/yoga.png" alt="yoga" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Yoga Therapy</h2>
+          <p>
+            Yoga and exercise plays a very important role in our lives.
+          </p>
+          <a href="html/yogatherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
+        <div class="round-image">
+          <img src="./images/laughing.png" alt="laughing" />
+        </div>
+        <div class="description">
+          <h2>Laughing Therapy</h2>
+          <p>
+            Laughing is the only medicine which refreshes our mind.
+          </p>
+          <a href="html/laughTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk">
+        <div class="round-image">
+          <img src="./images/talking.png" loading="lazy" alt="talking" />
+        </div>
+        <div class="description">
+          <h2>Talking Therapy</h2>
+          <p>
+            A quick short conversation can often bring smile to our face.
+          </p>
+          <a href="html/talkingTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
+        <div class="round-image">
+          <img src="./images/doctor.png" alt="doctor" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Consult A Doctor</h2>
+          <p>
+            If you're facing too many problems, you should consult a doctor.
+          </p>
+          <a href="https://www.practo.com/counselling-psychology" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div class="responsive child">
+        <div class="round-image">
+          <img src="./images/child.jpg" alt="child" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Child Therapy</h2>
+          <p>
+            Children make us forget about worries with their innocence.
+          </p>
+          <a href="./html/childTherapy.html">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div class="responsive spiritual">
+        <div class="round-image">
+          <img src="./images/spiritualtherapy.jpg" alt="spiritual" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Spiritual Therapy</h2>
+          <p>
+            Helps you to become more mindful in your thinking.
+          </p>
+          <a href="./html/spirituality.html" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div class="responsive special">
+        <div class="round-image">
+          <img src="./images/specialtherapy.jpg" alt="special" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Special Therapy</h2>
+          <p>
+            If you need special attention and help from us.
+          </p>
+          <a href="./html/specialTherapy.html" target="_blank">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <!-- Testimonials Section -->
+  <section id="testimonial" class="section-100">
+    <div class="testimonials_heading">
+      <h1>Testimonials</h1>
+    </div>
+    <div class="testimonial-view">
+      <div class="owl-carousel">
+        <div class="testimonial-box">
+
+          <figure class="testimonal-Card">
+            <blockquote> I've explored all therapy pages, but my fav one was audio therapy. It have different calming &
+              mood soothing sounds, there are also many podcasts as well. SANJEEVANI website really helped me to get relief
+              from my stress.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="./images/Rohit123.jpg" alt="sample3" />
+            <div class="author">
+              <h5>Rohit Kumar</h5>
+            </div>
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card hover">
+            <blockquote> I'm really loving the laughing therapy and reading therapy pages. The standup videos present in
+              the laughing therapy page cheer me up, and the quotes present in the reading therapy page are really
+              motivating. <div class="arrow"></div>
+            </blockquote>
+            <img src="./images/Vivek123.jpg" alt="sample47" />
+            <div class="author">
+              <h5>Vivek Singh</h5>
+            </div>
+          </figure>
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card">
+            <blockquote>As a student, I love using this website, SANJEEVANI is like having a personal therapist. Features
+              and UI of the website is amazing and it really helped me to manage a lot of my anxiety and stress. I also
+              feel much supported by the lines of quotes than a human.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="./images/Pratik123.jpg" alt="sample17" />
+            <div class="author">
+              <h5>Pratik Singh</h5>
+            </div>
+          </figure>
+
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card">
+            <blockquote>I'm really liking Audio, Reading and Yoga therapy because it's helpful for me during studying
+              time and last but not least Laughing therapy is also my favorite because whenever I am feeling lonely at
+              that time I am watching my childhoods cartoon show like Mr. bean and also watching memes.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="./images/WhatsApp Image 2023-12-25 at 21.47.43_ccd887dc.jpg" alt="sample17" />
+            <div class="author">
+              <h5>Keshav Singh</h5>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Faq section -->
+  <section class="faq">
+    <div class="faq_heading">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>Who are we and what do we do?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>We are a team of open source contributors who have created this website "SANJEEVANI"
+            with the aim
+            to provide a one step solution to get relief from stress. We hope that everyone can live a
+            stress free life with the help of SANJEEVANI.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What are the services we offer?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>We offer multiple services like:
+            <br>
+            1. Audio Therapy
+            <br>
+            2. Reading Therapy
+            <br>
+            3. Yoga Therapy
+            <br>
+            4. Laughing Therapy
+            <br>
+            5. Talking Therapy
+            <br>
+            6. Doctor Consultation
+            <br>
+            7. Child Therapy
+            <br>
+            8. Spiritual Therapy
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How can you Contact Us?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p> You can contact us via <a class="email" href="mailto:raishashank1462@gmail.com">sanjeevani665@gmail.com</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Reading Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Reading therapy is a creative art therapy that uses literature to support good
+            mental health and is a versatile and cost-effective treatment. It includes storytelling or the reading of
+            specific texts.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Audio Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Audio Therapy includes auditory and vibratory inputs which are used to influence a person's psychological
+            state, includes sound healing, vibroacoustic sound therapy, music, and music therapy.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Yoga Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Yoga therapy uses yoga postures, breathing exercises, meditation, and guided imagery to improve mental and
+            physical health.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Laughing Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Laughing therapy uses humor to help relieve pain and stress and improve a person's sense of well-being
+            through jokes and playful exercises that encourage hearty, continuous, and lively laughter.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Talking Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Talking therapy involves talking to someone to help deal with negative feelings or other mental health
+            problems. It helps shy individuals open up their problems to others so that they can help them overcome
+            them.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Child Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Child therapy includes the watching of cute videos and images of children, as children make us
+            forget about our problems with their innocence and cuteness.</p>
+        </div>
+      </div>
+
+      <div class="accordion__item">
+        <button class="accordion__btn">
+
+          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Spritual Therapy?</span>
+          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
+        </button>
+
+        <div class="accordion__content">
+          <p>Spiritual therapy is a form of counseling that attempts to treat a person's soul as well as mind and body
+            by accessing individual belief systems and using
+            that faith in a higher power to explore areas of conflict in life.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- footer start -->
+  
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="./images/image1234.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+          <!-- <h2 class="footerheading"><I>SANJEEVANI</I></h2> -->
+          <p class="footerpara"><center><h2><I>SANJEEVANI</I></h2></center><center><h6>Chakra Healing</h6></center></p>
+        </div>
+      </div>
+
+      <!--ADDRESS COLUMN-->
+
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>Greater Noida, India</p>
+          <p class="email-id"><a href="mailto:panwarayushi903@gmail.com">sanjeevani665@gmail.com</a></p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <!-- <li>
+              <a href="https://github.com/Susmita-Dey/Sukoon/blob/main/CODE_OF_CONDUCT.md">Code Of Conduct</a>
+            </li>
+            <li>
+              <a href="https://github.com/Susmita-Dey/Sukoon">Contribute</a>
+            </li>
+            <li>
+              <a href="https://www.buymeacoffee.com/susmitadey">Donate</a>
+            </li> -->
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+        <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/audiotherapy">Audio Therapy</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/readingtherapy">Reading Therapy</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/yogatherapy.html">Yoga Therapy</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/laughTherapy.html">Laughing Therapy</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/talkingtherapy">Talking Therapy</a>
+            </li>
+            <li>
+              <a href="https://www.practo.com/counselling-psychology">Consult a Doctor</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/childTherapy">Child Therapy</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/spirituality">Spiritual Therapy</a>
+            </li>
+            <li>
+              <a href="https://sukoon-stress-free.netlify.app/html/specialTherapy">Special Therapy</a>
+            </li>
+          </ul>
+        </div>
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <a href="https://x.com/kishu_rajput091?t=s9CfpuAfuWU7A-MOHf7SJg&s=09" target="_blank">
+                <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="https://www.linkedin.com/in/ayushi-panwar-08471a281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+              <a href="https://www.instagram.com/btw_itz.panwar?igsh=MTY2aWdkMjV5amJmaw=="target="_blank">
+                <li id="social-Instagram"><i class ="fab fa-2x fa-instagram"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then((reg) => console.log('Success', reg.scope))
+          .catch((err) => console.log('Error', err))
+      })
+    }
+  </script>
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
